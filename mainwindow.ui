@@ -6,14 +6,61 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>33</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="manual_tab">
+     <property name="minimumSize">
+      <size>
+       <width>800</width>
+       <height>500</height>
+      </size>
+     </property>
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="config_tab">
+     <property name="minimumSize">
+      <size>
+       <width>800</width>
+       <height>500</height>
+      </size>
+     </property>
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="teach_tab">
+     <property name="minimumSize">
+      <size>
+       <width>800</width>
+       <height>500</height>
+      </size>
+     </property>
+     <attribute name="title">
+      <string>Tab 3</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

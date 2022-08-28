@@ -6,6 +6,9 @@ TopHeaderView::TopHeaderView(QWidget *parent) :
     ui(new Ui::TopHeaderView)
 {
     ui->setupUi(this);
+
+    QPixmap pixmap = QPixmap(":/images/status_run.png");
+    setStatusImage(pixmap);
 }
 
 TopHeaderView::~TopHeaderView()
@@ -15,6 +18,10 @@ TopHeaderView::~TopHeaderView()
 
 void TopHeaderView::on_login_btn_clicked()
 {
+    emit loginBtnOnClicked();
+}
 
+void TopHeaderView::setStatusImage(const QPixmap& img){
+    ui->status_img->setPixmap(img);
 }
 

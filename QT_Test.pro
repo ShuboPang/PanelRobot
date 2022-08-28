@@ -33,17 +33,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    BasicControls/iccombox.cpp \
+    Teach/actioncommandmodel.cpp \
+    Teach/waitactioncommand.cpp \
+    actioncommandeditorbase.cpp \
+    actionmenuview.cpp \
+    bottombuttons.cpp \
         main.cpp \
         mainwindow.cpp \
     BasicControls/iclistview.cpp \
     topheaderview.cpp
 
 HEADERS += \
+    BasicControls/iccombox.h \
+    Teach/actioncommandmodel.h \
+    Teach/waitactioncommand.h \
+    actioncommandeditorbase.h \
+    actionmenuview.h \
+    bottombuttons.h \
         mainwindow.h \
     BasicControls/iclistview.h \
     topheaderview.h
 
 FORMS += \
+        bottombuttons.ui \
         mainwindow.ui \
         topheaderview.ui
 
@@ -51,3 +64,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    img.qrc
